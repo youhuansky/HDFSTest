@@ -51,7 +51,7 @@
 	<classpathentry kind="lib" path="lib/hadoop-auth-2.7.2.jar"/>
 	<classpathentry kind="lib" path="lib/hadoop-aws-2.7.2.jar"/>
 	<classpathentry kind="lib" path="lib/hadoop-azure-2.7.2.jar"/>
-	<classpathentry kind="lib" path="lib/hadoop-common-2.7.2.jar"/>
+	<classpathentry kind="lib" path="lib/hadoop-common-2.7.2.jar" sourcepath="D:/hadoopjar/src/hadoop-common-2.7.2-sources.jar"/>
 	<classpathentry kind="lib" path="lib/hadoop-datajoin-2.7.2.jar"/>
 	<classpathentry kind="lib" path="lib/hadoop-distcp-2.7.2.jar"/>
 	<classpathentry kind="lib" path="lib/hadoop-extras-2.7.2.jar"/>
