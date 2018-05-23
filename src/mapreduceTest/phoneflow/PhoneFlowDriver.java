@@ -16,11 +16,13 @@ public class PhoneFlowDriver {
 		instance.setJarByClass(PhoneFlowDriver.class);
 		
 		instance.setMapperClass(PhoneFlowMapper.class);
-		instance.setReducerClass(PhoneFlowReducer.class);
+//		instance.setReducerClass(PhoneFlowReducer.class);
+		instance.setReducerClass(PhoneFlowBeanReducer.class);
 		instance.setMapOutputKeyClass(Text.class);
 		instance.setMapOutputValueClass(PhoneFlow.class);
 		instance.setOutputKeyClass(Text.class);
-		instance.setOutputValueClass(Text.class);
+//		instance.setOutputValueClass(Text.class);
+		instance.setOutputValueClass(PhoneFlow.class);
 		
 		
 		FileInputFormat.setInputPaths(instance, new Path(args[0]));
