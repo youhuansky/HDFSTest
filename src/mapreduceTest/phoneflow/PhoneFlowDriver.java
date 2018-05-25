@@ -21,8 +21,8 @@ public class PhoneFlowDriver {
 		instance.setMapOutputValueClass(PhoneFlow.class);
 		instance.setOutputKeyClass(Text.class);
 		instance.setOutputValueClass(Text.class);
-		
-		
+		instance.setPartitionerClass(PhonePartitioner.class);
+		instance.setNumReduceTasks(5);
 		FileInputFormat.setInputPaths(instance, new Path(args[0]));
 		FileOutputFormat.setOutputPath(instance, new Path(args[1]));
 		boolean waitForCompletion = instance.waitForCompletion(true);

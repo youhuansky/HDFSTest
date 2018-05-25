@@ -2,7 +2,6 @@ package mapreduceTest.phoneflow;
 
 import java.io.IOException;
 
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
@@ -17,6 +16,7 @@ public class PhoneFlowReducer extends Reducer<Text, PhoneFlow, Text, Text> {
 		int downFlowInt = 0;
 		int sumFlowInt = 0;
 		for (PhoneFlow phoneFlow : flowNumIterable) {
+			
 			upFlowInt+=phoneFlow.getUpFlow();
 			downFlowInt+=phoneFlow.getDownFlow();
 			sumFlowInt+=phoneFlow.getSumFlow();
