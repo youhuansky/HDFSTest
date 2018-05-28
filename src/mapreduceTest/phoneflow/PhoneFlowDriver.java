@@ -23,7 +23,7 @@ public class PhoneFlowDriver {
 		instance.setOutputKeyClass(Text.class);
 		instance.setOutputValueClass(Text.class);
 		instance.setPartitionerClass(PhonePartitioner.class);
-		instance.setNumReduceTasks(5);
+		instance.setNumReduceTasks(1);
 		
 		
 		FileInputFormat.setInputPaths(instance, new Path(args[0]));
