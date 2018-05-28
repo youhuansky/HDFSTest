@@ -46,4 +46,10 @@ public class PhoneFlow implements Writable{
 		out.writeInt(downFlow);
 		out.writeInt(sumFlow);
 	}
+	@Override
+	public String toString() {
+		return  upFlow + " " + downFlow + " " + sumFlow;
+	}
+	
+	
 }
