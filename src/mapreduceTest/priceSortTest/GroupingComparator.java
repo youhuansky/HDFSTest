@@ -13,11 +13,6 @@ public class GroupingComparator extends WritableComparator{
 	public int compare(WritableComparable a, WritableComparable b) {
 		Product product1=(Product)a;
 		Product product2=(Product)b;
-		
 		return -product1.getPrice().compareTo(product2.getPrice());
 	}
-	
-	
-	
-
 }
